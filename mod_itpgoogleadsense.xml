@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_ITPGOOGLEADSENSE</name>
+	<author>Todor Iliev</author>
+	<creationDate>Feburary, 2011</creationDate>
+	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>todor@itprism.com</authorEmail>
+	<authorUrl>http://itprism.com</authorUrl>
+	<version>1.3</version>
+	<description><![CDATA[
+	<p><a href="http://itprism.com/free-joomla-extensions/ecommerce-gamification/google-adsense-integration">ITPGoogleAdSense</a> is a module that adds Google AdSense on your web page.</p>
+	<p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/ads-a-affiliates/google-ads/6869">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+	
+	<languages>
+        <language tag="en-GB">en-GB.mod_itpgoogleadsense.ini</language>
+        <language tag="en-GB">en-GB.mod_itpgoogleadsense.sys.ini</language>
+    </languages> 
+    
+	<files>
+		<filename module="mod_itpgoogleadsense">mod_itpgoogleadsense.php</filename>
+		<filename>index.html</filename>
+		<filename>README.md</filename>
+	</files>
+	<config>
+			<fields name="params">
+	            <fieldset name="basic">
+					<field name="publisherId" type="text" default="" size="80" label="Publisher ID" description="Please, enter your Publisher ID provided by Google AdSense. It is an alphanumerical string like pub-123456789876543. If you do not have an ID, register yourself to Google AdSense." />
+					<field name="slot" type="text" default="" size="80" label="Slot number" description="Enter a slot number that is into the AdSense JavaScript code. It is a numerical string like 54656789." />
+					<field name="channel" type="text" default="" size="80" label="Channel number" description="Enter a channel number that is part of AdSense JavaScript code." />
+
+					<field name="format" type="list" default="120x240_as" label="AdSense Size" description="Choose an advertisement format and ads size that you would like to display on your page.">
+						<option value="468x60_as"> 468 x 60 Banner </option> 
+						<option value="234x60_as"> 234 x 60 Half Banner </option> 
+						
+						<option value=""> --- </option> 
+						<option value="120x600_as"> 120 x 600 Skyscraper </option> 
+						<option value="160x600_as"> 160 x 600 Wide Skyscraper </option> 
+						<option value="120x240_as"> 120 x 240 Vertical Banner </option> 
+						
+						<option value=""> --- </option>
+						<option value="336x280_as"> 336 x 280 Large Rectangle </option>
+						<option value="300x250_as"> 300 x 250 Medium rectangle </option> 
+						<option value="250x250_as"> 250 x 250 Square </option> 
+						<option value="200x200_as"> 200 x 200 Small Square </option>
+						<option value="180x150_as"> 180 x 150 Small Rectangle </option>
+						<option value="125x125_as"> 125 x 125 Button </option>
+						
+						<option value=""> --- </option>         
+						<option value="728x90_as"> 728 x 90 Leaderboard </option>
+						
+						<option value=""> --- </option>
+						<option value="728x15_0ads_al">728 x 15 Adlink 4 links</option>
+						<option value="468x15_0ads_al">468 x 15 Adlink 4 links</option>
+						<option value="120x90_0ads_al">120 x 90 Adlink 4 links</option>
+						<option value="160x90_0ads_al">160 x 90 Adlink 4 links</option>
+						<option value="180x90_0ads_al">180 x 90 Adlink 4 links</option>
+						<option value="200x90_0ads_al">200 x 90 Adlink 4 links</option>
+						
+						<option value=""> --- </option>
+						<option value="728x15_0ads_al_s">728 x 15 Adlink 5 links</option>
+						<option value="468x15_0ads_al_s">468 x 15 Adlink 5 links</option>
+						<option value="120x90_0ads_al_s">120 x 90 Adlink 5 links</option>
+						<option value="160x90_0ads_al_s">160 x 90 Adlink 5 links</option>
+						<option value="180x90_0ads_al_s">180 x 90 Adlink 5 links</option>
+						<option value="200x90_0ads_al_s">200 x 90 Adlink 5 links</option>
+					</field>
+				</fieldset>
+				<fieldset name="advanced">
+					<field name="moduleclass_sfx" type="text"
+	                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+	                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+	
+	                <field name="owncache" type="list" default="1"
+	                    label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
+	                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+	                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+	                    </option>
+	                </field>
+	
+	                <field name="cache_time" type="text" default="900"
+	                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+						
+					<field name="blockedIPs" type="textarea" default="" label="Blocked IPs" description="Enter an IP number that you would like to block. Devide the addresses by comma." cols="30" rows="8" />
+					<field name="altMessage" type="textarea" default="" label="Message on blocked IP" description="Enter a message to show when blocked IPs try to load the page."  cols="30" rows="8"/>
+				</fieldset> 
+			</fields>
+     </config>
+</extension>
