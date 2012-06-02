@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<extension type="module" version="2.5" client="site" method="upgrade">
-	<name>MOD_ITPGOOGLEADSENSE</name>
+	<name>ITPGoogleAdSense</name>
 	<author>Todor Iliev</author>
 	<creationDate>Feburary, 2011</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
@@ -15,11 +15,6 @@
 	<p>Please, <a href="http://extensions.joomla.org/extensions/ads-a-affiliates/google-ads/6869">vote for the extension</a> on Joomla! Extensions Directory</p>
 	]]></description>
 	
-	<languages>
-        <language tag="en-GB">en-GB.mod_itpgoogleadsense.ini</language>
-        <language tag="en-GB">en-GB.mod_itpgoogleadsense.sys.ini</language>
-    </languages> 
-    
 	<files>
 		<filename module="mod_itpgoogleadsense">mod_itpgoogleadsense.php</filename>
 		<filename>index.html</filename>
