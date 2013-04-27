@@ -5,5 +5,12 @@ ITPGoogleAdSense Module for Joomla!
 
 Changelog
 ---------
+v1.3
+---------
+* Improved translation
+* Added new kinds of ads - "Large Leaderboard ", "Large Skyscraper" 
 
+
+--------
+v1.2
 * Improved 
