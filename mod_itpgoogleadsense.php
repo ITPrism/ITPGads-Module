@@ -13,8 +13,15 @@
 
 defined( '_JEXEC' ) or die;
 
+$app = JFactory::getApplication();
+/** @var $app JSite **/
+
 $moduleClassSfx = htmlspecialchars($params->get('moduleclass_sfx', ""));
 
+// Get remote address
+$remoteAddress  = $app->input->server->get("REMOTE_ADDR");
+
+// Get blocked addresses
 $ips = explode(",", $params->get('blockedIPs'));
 foreach($ips as &$ip) {
     $ip = trim($ip);
@@ -22,7 +29,7 @@ foreach($ips as &$ip) {
 
 $html = '<div class="itp-gads-'.$moduleClassSfx.'">';
 
-if (!in_array($_SERVER["REMOTE_ADDR"], $ips)) {
+if (!in_array($remoteAddress, $ips)) {
     
     $customCode     = $params->get('custom_code');
     
