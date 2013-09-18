@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<extension type="module" version="3.1" client="site" method="upgrade">
-	<name>MOD_ITPGOOGLEADSENSE</name>
+	<name>MOD_ITPGADS</name>
 	<author>Todor Iliev</author>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
@@ -8,14 +8,14 @@
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.5</version>
 	<creationDate>18 September, 2013</creationDate>
-	<description>MOD_ITPGOOGLEADSENSE_DESC</description>
+	<description>MOD_ITPGADS_DESC</description>
 	
 	<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_itpgads.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_itpgads.sys.ini</language>
     </languages>    
     
-    <help url="MOD_ITPGOOGLEADSENSE_HELP_URL"/>
+    <help url="MOD_ITPGADS_HELP_URL"/>
     
 	<files>
 		<filename module="mod_itpgads">mod_itpgads.php</filename>
@@ -26,47 +26,47 @@
 	<config>
 			<fields name="params">
 	            <fieldset name="basic">
-					<field name="publisherId" type="text" default="" size="80" label="MOD_ITPGOOGLEADSENSE_PUBLISHER_ID" description="MOD_ITPGOOGLEADSENSE_PUBLISHER_ID_DESC" />
-					<field name="slot" type="text" default="" size="80" label="MOD_ITPGOOGLEADSENSE_SLOT_NUMBER" description="MOD_ITPGOOGLEADSENSE_SLOT_NUMBER_DESC" />
-					<field name="channel" type="text" default="" size="80" label="MOD_ITPGOOGLEADSENSE_CHANNEL_NUMBER" description="MOD_ITPGOOGLEADSENSE_CHANNEL_NUMBER_DESC" />
+					<field name="publisherId" type="text" default="" size="80" label="MOD_ITPGADS_PUBLISHER_ID" description="MOD_ITPGADS_PUBLISHER_ID_DESC" />
+					<field name="slot" type="text" default="" size="80" label="MOD_ITPGADS_SLOT_NUMBER" description="MOD_ITPGADS_SLOT_NUMBER_DESC" />
+					<field name="channel" type="text" default="" size="80" label="MOD_ITPGADS_CHANNEL_NUMBER" description="MOD_ITPGADS_CHANNEL_NUMBER_DESC" />
 
-					<field name="format" type="list" default="120x240_as" label="MOD_ITPGOOGLEADSENSE_SIZE" description="MOD_ITPGOOGLEADSENSE_SIZE_DESC">
-						<option value="468x60_as">MOD_ITPGOOGLEADSENSE_468_60</option> 
-						<option value="234x60_as">MOD_ITPGOOGLEADSENSE_234_60_HALF_BANNER</option> 
+					<field name="format" type="list" default="120x240_as" label="MOD_ITPGADS_SIZE" description="MOD_ITPGADS_SIZE_DESC">
+						<option value="468x60_as">MOD_ITPGADS_468_60</option> 
+						<option value="234x60_as">MOD_ITPGADS_234_60_HALF_BANNER</option> 
 						
 						<option value=""> --- </option> 
-						<option value="120x600_as">MOD_ITPGOOGLEADSENSE_120_600_SKYSCRAPER</option> 
-						<option value="300x600_as">MOD_ITPGOOGLEADSENSE_300_600_LARGE_SKYSCRAPER</option> 
-						<option value="160x600_as">MOD_ITPGOOGLEADSENSE_160_600_WIDE_SKYSCRAPER</option> 
-						<option value="120x240_as">MOD_ITPGOOGLEADSENSE_120_240_VERTICAL_BANNER</option> 
+						<option value="120x600_as">MOD_ITPGADS_120_600_SKYSCRAPER</option> 
+						<option value="300x600_as">MOD_ITPGADS_300_600_LARGE_SKYSCRAPER</option> 
+						<option value="160x600_as">MOD_ITPGADS_160_600_WIDE_SKYSCRAPER</option> 
+						<option value="120x240_as">MOD_ITPGADS_120_240_VERTICAL_BANNER</option> 
 						
 						<option value=""> --- </option>
-						<option value="336x280_as">MOD_ITPGOOGLEADSENSE_336_280_LARGE_RECTANGLE</option>
-						<option value="300x250_as">MOD_ITPGOOGLEADSENSE_300_250_MEDIUM_RECTANGLE</option> 
-						<option value="250x250_as">MOD_ITPGOOGLEADSENSE_250_250_SQUARE</option> 
-						<option value="200x200_as">MOD_ITPGOOGLEADSENSE_200_200_SMALL_SQUARE</option>
-						<option value="180x150_as">MOD_ITPGOOGLEADSENSE_180_150_SMALL_RECTANGLE</option>
-						<option value="125x125_as">MOD_ITPGOOGLEADSENSE_125_125_BUTTON</option>
+						<option value="336x280_as">MOD_ITPGADS_336_280_LARGE_RECTANGLE</option>
+						<option value="300x250_as">MOD_ITPGADS_300_250_MEDIUM_RECTANGLE</option> 
+						<option value="250x250_as">MOD_ITPGADS_250_250_SQUARE</option> 
+						<option value="200x200_as">MOD_ITPGADS_200_200_SMALL_SQUARE</option>
+						<option value="180x150_as">MOD_ITPGADS_180_150_SMALL_RECTANGLE</option>
+						<option value="125x125_as">MOD_ITPGADS_125_125_BUTTON</option>
 						
 						<option value=""> --- </option>         
-						<option value="728x90_as">MOD_ITPGOOGLEADSENSE_728_90_LEADERBOARD</option>
-						<option value="970x90_as">MOD_ITPGOOGLEADSENSE_970_90_LARGE_LEADERBOARD</option>
+						<option value="728x90_as">MOD_ITPGADS_728_90_LEADERBOARD</option>
+						<option value="970x90_as">MOD_ITPGADS_970_90_LARGE_LEADERBOARD</option>
 						
 						<option value=""> --- </option>
-						<option value="728x15_0ads_al">MOD_ITPGOOGLEADSENSE_728_15_ADLINK_4_LINKS</option>
-						<option value="468x15_0ads_al">MOD_ITPGOOGLEADSENSE_468_15_ADLINK_4_LINKS</option>
-						<option value="120x90_0ads_al">MOD_ITPGOOGLEADSENSE_120_90_ADLINK_4_LINKS</option>
-						<option value="160x90_0ads_al">MOD_ITPGOOGLEADSENSE_160_90_ADLINK_4_LINKS</option>
-						<option value="180x90_0ads_al">MOD_ITPGOOGLEADSENSE_180_90_ADLINK_4_LINKS</option>
-						<option value="200x90_0ads_al">MOD_ITPGOOGLEADSENSE_200_90_ADLINK_4_LINKS</option>
+						<option value="728x15_0ads_al">MOD_ITPGADS_728_15_ADLINK_4_LINKS</option>
+						<option value="468x15_0ads_al">MOD_ITPGADS_468_15_ADLINK_4_LINKS</option>
+						<option value="120x90_0ads_al">MOD_ITPGADS_120_90_ADLINK_4_LINKS</option>
+						<option value="160x90_0ads_al">MOD_ITPGADS_160_90_ADLINK_4_LINKS</option>
+						<option value="180x90_0ads_al">MOD_ITPGADS_180_90_ADLINK_4_LINKS</option>
+						<option value="200x90_0ads_al">MOD_ITPGADS_200_90_ADLINK_4_LINKS</option>
 						
 						<option value=""> --- </option>
-						<option value="728x15_0ads_al_s">MOD_ITPGOOGLEADSENSE_728_15_ADLINK_5_LINKS</option>
-						<option value="468x15_0ads_al_s">MOD_ITPGOOGLEADSENSE_468_15_ADLINK_5_LINKS</option>
-						<option value="120x90_0ads_al_s">MOD_ITPGOOGLEADSENSE_120_90_ADLINK_5_LINKS</option>
-						<option value="160x90_0ads_al_s">MOD_ITPGOOGLEADSENSE_160_90_ADLINK_5_LINKS</option>
-						<option value="180x90_0ads_al_s">MOD_ITPGOOGLEADSENSE_180_90_ADLINK_5_LINKS</option>
-						<option value="200x90_0ads_al_s">MOD_ITPGOOGLEADSENSE_200_90_ADLINK_5_LINKS</option>
+						<option value="728x15_0ads_al_s">MOD_ITPGADS_728_15_ADLINK_5_LINKS</option>
+						<option value="468x15_0ads_al_s">MOD_ITPGADS_468_15_ADLINK_5_LINKS</option>
+						<option value="120x90_0ads_al_s">MOD_ITPGADS_120_90_ADLINK_5_LINKS</option>
+						<option value="160x90_0ads_al_s">MOD_ITPGADS_160_90_ADLINK_5_LINKS</option>
+						<option value="180x90_0ads_al_s">MOD_ITPGADS_180_90_ADLINK_5_LINKS</option>
+						<option value="200x90_0ads_al_s">MOD_ITPGADS_200_90_ADLINK_5_LINKS</option>
 					</field>
 				</fieldset>
 				<fieldset name="advanced">
@@ -103,10 +103,10 @@
 	                    <option value="static"></option>
 	                </field>
 					
-					<field name="blockedIPs" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS" description="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS_DESC" class="span6" rows="10" cols="60" />
-                    <field name="altMessage" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP" description="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP"  class="span6" rows="10" cols="60"/>
+					<field name="blockedIPs" type="textarea" default="" label="MOD_ITPGADS_BLOCKED_IPS" description="MOD_ITPGADS_BLOCKED_IPS_DESC" class="span6" rows="10" cols="60" />
+                    <field name="altMessage" type="textarea" default="" label="MOD_ITPGADS_MESSAGE_BLOCKED_IP" description="MOD_ITPGADS_MESSAGE_BLOCKED_IP"  class="span6" rows="10" cols="60"/>
                     
-                    <field name="custom_code" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE" description="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE_DESC" class="span6" rows="20" cols="60" filter="raw" />
+                    <field name="custom_code" type="textarea" default="" label="MOD_ITPGADS_CUSTOM_CODE" description="MOD_ITPGADS_CUSTOM_CODE_DESC" class="span6" rows="20" cols="60" filter="raw" />
 				</fieldset> 
 			</fields>
      </config>
