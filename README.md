@@ -1,22 +1,22 @@
-ITPGoogleAdSense Module for Joomla!
+ITPGads Module for Joomla!
 ==========================
-( Version 1.4 )
+( Version 1.5 )
 --------------------------
+
+This is a Joomla! module that adds Google AdSense ads on your website.
 
 Changelog
 ---------
 
-v1.4
----------
-* Added a field for custom code
-* Improved
+###v1.5
 
-v1.3
----------
+* Renamed to ITPGads.
+
+###v1.3
+
 * Improved translation
 * Added new kinds of ads - "Large Leaderboard ", "Large Skyscraper" 
 
+###v1.2
 
---------
-v1.2
 * Improved 

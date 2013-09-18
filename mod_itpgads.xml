@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<extension type="module" version="2.5" client="site" method="upgrade">
+	<extension type="module" version="3.1" client="site" method="upgrade">
 	<name>MOD_ITPGOOGLEADSENSE</name>
 	<author>Todor Iliev</author>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.4</version>
-	<creationDate>2 June, 2013</creationDate>
+	<version>1.5</version>
+	<creationDate>18 September, 2013</creationDate>
 	<description>MOD_ITPGOOGLEADSENSE_DESC</description>
 	
 	<languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_itpgoogleadsense.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_itpgoogleadsense.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpgads.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpgads.sys.ini</language>
     </languages>    
     
     <help url="MOD_ITPGOOGLEADSENSE_HELP_URL"/>
     
 	<files>
-		<filename module="mod_itpgoogleadsense">mod_itpgoogleadsense.php</filename>
+		<filename module="mod_itpgads">mod_itpgads.php</filename>
 		<filename>index.html</filename>
 		<filename>README.md</filename>
 	</files>
@@ -103,11 +103,10 @@
 	                    <option value="static"></option>
 	                </field>
 					
-					<field name="blockedIPs" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS" description="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS_DESC" cols="50" rows="10" />
-                    <field name="altMessage" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP" description="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP"  cols="50" rows="10"/>
+					<field name="blockedIPs" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS" description="MOD_ITPGOOGLEADSENSE_BLOCKED_IPS_DESC" class="span6" rows="10" cols="60" />
+                    <field name="altMessage" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP" description="MOD_ITPGOOGLEADSENSE_MESSAGE_BLOCKED_IP"  class="span6" rows="10" cols="60"/>
                     
-	                <field name="custom_code" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE" description="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE_DESC" cols="50" rows="20" filter="raw" />
-	            
+                    <field name="custom_code" type="textarea" default="" label="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE" description="MOD_ITPGOOGLEADSENSE_CUSTOM_CODE_DESC" class="span6" rows="20" cols="60" filter="raw" />
 				</fieldset> 
 			</fields>
      </config>
