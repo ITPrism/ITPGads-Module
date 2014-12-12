@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<extension type="module" version="3.1" client="site" method="upgrade">
+	<extension type="module" version="3.3" client="site" method="upgrade">
 	<name>MOD_ITPGADS</name>
 	<author>Todor Iliev</author>
-	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<copyright>Copyright (C) 2014 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.5</version>
-	<creationDate>18 September, 2013</creationDate>
-	<description>MOD_ITPGADS_DESC</description>
+	<version>1.6</version>
+	<creationDate>12 December, 2014</creationDate>
+	<description><![CDATA[
+    <p><a href="http://itprism.com/free-joomla-extensions/ecommerce-gamification/google-adsense-integration" target="_blank">ITP Gads</a> is a module that adds Google AdSense on your web page.</p>
+    <p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" target="_blank">sponsor the extension via SMS, PayPal or Bitcoin</a>.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive <strong>gifts</strong>, <strong>discount codes</strong>, information about <strong>updates</strong> and information about <strong>new ITPrism extensions</strong>.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/ads-a-affiliates/affiliate-systems/google-ads/6869" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
 	
-	<languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_itpgads.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_itpgads.sys.ini</language>
-    </languages>    
-    
     <help url="MOD_ITPGADS_HELP_URL"/>
     
 	<files>
 		<filename module="mod_itpgads">mod_itpgads.php</filename>
-		<filename>index.html</filename>
 		<filename>README.md</filename>
-	</files>
+
+        <folder>language</folder>
+    </files>
 	
 	<config>
 			<fields name="params">
@@ -102,7 +103,12 @@
 	                    default="static">
 	                    <option value="static"></option>
 	                </field>
-					
+
+                    <field name="ad_type" type="list" default="1" label="MOD_ITPGADS_AD_TYPE" description="MOD_ITPGADS_AD_TYPE_DESC">
+                        <option value="0">MOD_ITPGADS_SYNCHRONOUS</option>
+                        <option value="1">MOD_ITPGADS_ASYNCHRONOUS</option>
+                    </field>
+
 					<field name="blockedIPs" type="textarea" default="" label="MOD_ITPGADS_BLOCKED_IPS" description="MOD_ITPGADS_BLOCKED_IPS_DESC" class="span6" rows="10" cols="60" />
                     <field name="altMessage" type="textarea" default="" label="MOD_ITPGADS_MESSAGE_BLOCKED_IP" description="MOD_ITPGADS_MESSAGE_BLOCKED_IP"  class="span6" rows="10" cols="60"/>
                     
